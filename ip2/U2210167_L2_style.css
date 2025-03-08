@@ -1,0 +1,175 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background: url("https://wallpapercave.com/wp/wp1816233.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+
+/* Header */
+header {
+    font-size: 30pt;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: yellow;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* Left Sidebar (Navigation) */
+.left-sidebar {
+    margin:35px 0px -100px 5px ;
+    width: 10%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 60px; /* Below header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+.left-sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.left-sidebar a:hover {
+    
+    color: yellow;
+}
+
+/* Right Sidebar (Image) */
+.right-sidebar {
+    margin: 35px 10px -100px 0px;
+    border-radius: 15px;
+    width: 22%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    right: 0;
+    top: 60px; /* Below header */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+}
+
+.right-sidebar img {
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.8);
+    margin-bottom: auto; /* Pushes other content down */
+}
+
+/* Main Content */
+.main-content {
+    
+    width: 60%;
+    margin: 95px 0;
+    margin-left:-15%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+.main-img {
+    
+    width: 80%; /* Adjusts the width of the image to 80% of the viewport */
+    height: inherit;
+    margin: 20px auto; /* Centers the image inside #main */
+    border-radius: 15px; 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+
+/* Footer */
+footer {
+    font-size: 20pt;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: yellow;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
+    
+    .main-content {
+        width: 90%;
+        margin: 150px auto;
+    }
+}
+
+
+
+
+/* Tables */
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+th {
+    background: rgb(178, 137, 214);
+    color: black;
+    font-weight: bold;
+}
+
+table a{
+    color: white;
+    text-decoration: none;
+}
+table a:hover{
+    
+color: yellow;
+}
+
+h3{
+    font-size: 1em;
+    text-transform: uppercase;
+}
